@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BIO HEALTH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body { margin:0; font-family:Arial; background:#f9f9f9; }
+    h1,h2,h3 { margin:0; }
+    .section { padding:60px 20px; text-align:center; }
+    .btn { padding:10px 20px; border:none; cursor:pointer; border-radius:8px; }
+    .btn-blue { background:#2563eb; color:white; }
+    .grid { display:grid; gap:20px; }
+    .cards { grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); }
+    .card { background:white; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="section" style="background:#e0f2fe">
+  <h1 style="color:#2563eb; font-size:40px;">BIO HEALTH</h1>
+  <p>Votre partenaire de confiance en équipements médicaux</p>
+  <br>
+  <button class="btn btn-blue">Demande de devis</button>
+  <button class="btn">Nous contacter</button>
+</div>
+
+<!-- PARTENAIRES -->
+<div class="section">
+  <h2>Nos partenaires</h2>
+  <div class="grid cards">
+    <div class="card">Diagnostica Stago</div>
+    <div class="card">Disera Medical</div>
+    <div class="card">Diagast</div>
+    <div class="card">Alcor Scientific</div>
+    <div class="card">Sarstedt</div>
+  </div>
+</div>
+
+<!-- PRODUITS -->
+<div class="section" style="background:#f1f5f9">
+  <h2>Produits</h2>
+  <div class="grid cards">
+
+    <div class="card">
+      <h3>STA Satellite Max</h3>
+      <p>1500 TND</p>
+      <button onclick="show('Analyseur d’hémostase')">Voir plus</button>
+    </div>
+
+    <div class="card">
+      <h3>STA R Max3</h3>
+      <p>1600 TND</p>
+      <button onclick="show('Analyse haute performance')">Voir plus</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+  <h2>Nos services</h2>
+  <div class="grid cards">
+    <div class="card">Installation</div>
+    <div class="card">Formation</div>
+    <div class="card">Support technique</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" style="background:#f1f5f9">
+  <h2>Contact</h2>
+
+  <input placeholder="Nom"><br><br>
+  <input placeholder="Email"><br><br>
+  <textarea placeholder="Message"></textarea><br><br>
+
+  <button class="btn btn-blue">Envoyer</button>
+
+  <br><br>
+
+  <iframe width="100%" height="200"
+  src="https://maps.google.com/maps?q=Megrine&t=&z=13&ie=UTF8&iwloc=&output=embed">
+  </iframe>
+</div>
+
+<script>
+function show(text){
+  alert(text + " - Bientôt disponible");
+}
+</script>
+
+</body>
+</html>
